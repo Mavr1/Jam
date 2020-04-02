@@ -5,3 +5,25 @@
   line-height: $lh;
   color: $color;
 }
+
+@mixin for-phone-only {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-up {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@function rem($px) {
+  @return ($px / 16) + rem;
+}
