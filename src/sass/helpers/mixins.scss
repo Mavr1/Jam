@@ -1,0 +1,7 @@
+@mixin font($ff: 'Acrom', $fw: 400, $fs: 16px, $lh: 1.2, $color: inherit) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  color: $color;
+}
