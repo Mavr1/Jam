@@ -1,0 +1,160 @@
+.wrapper {
+  @include for-phone-only {
+    width: 226px;
+    margin: 0 auto;
+  }
+}
+
+.about {
+  counter-reset: count-box;
+  padding: 46px 0 50px;
+}
+
+.section__heading {
+  font-size: 20px;
+  font-family: 'Acrom', sans-serif;
+  font-weight: 900;
+  color: $fifth-font-color;
+  line-height: 1.5;
+  letter-spacing: -0.8px;
+  text-align: left;
+  margin-bottom: 36px;
+}
+
+.section__subtitle {
+  font-size: 16px;
+  font-family: 'Acrom', sans-serif;
+  font-weight: 900;
+  color: $main-font-color;
+  line-height: 1.313;
+  text-align: left;
+  background-color: #edf0f2;
+  width: max-content;
+  margin-bottom: 22px;
+}
+
+.awards {
+  padding-bottom: 48px;
+
+  &__list {
+    padding: 0;
+  }
+}
+
+.awards__item {
+  position: relative;
+  width: 100%;
+  padding: 42px 14px 26px 0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, 0.16);
+
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  &::before {
+    counter-increment: count-box;
+    display: block;
+    content: counter(count-box, decimal-leading-zero);
+    position: absolute;
+    font-size: 70px;
+    line-height: 0.72;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: rgb(237, 240, 242);
+    right: 0px;
+    top: -36px;
+    z-index: -1;
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    background-color: rgb(230, 233, 235);
+    position: absolute;
+    left: -20px;
+    top: 25px;
+    width: 100%;
+    height: calc(100% - 7px);
+    z-index: -1;
+  }
+
+  &-title {
+    font-size: 18px;
+    font-family: 'Acrom', sans-serif;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    line-height: 1.444;
+    padding-left: 28px;
+
+    &--br {
+      display: block;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      background-color: $third-font-color;
+      position: absolute;
+      top: 24px;
+      left: -12px;
+      width: 60px;
+      height: 2px;
+    }
+  }
+
+  &-description {
+    font-size: 14px;
+    font-family: 'Acrom', sans-serif;
+    font-weight: 400;
+    color: #6b6f7a;
+    line-height: 1.5;
+    padding-left: 28px;
+  }
+
+  &-description--b {
+    font-weight: 900;
+    color: #000;
+  }
+}
+
+.awards__photo {
+  margin: 0 auto;
+}
+
+.GoForIt {
+  background: url('../images/About/UN.png') no-repeat;
+  background-position: 50% 16px;
+  padding-top: 20px;
+}
+
+.GoForIt__article-title {
+  font-size: 24px;
+  font-family: 'Acrom', sans-serif;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.25;
+}
+
+.GoForIt__article-discription {
+  font-size: 14px;
+  font-family: 'Acrom', sans-serif;
+  font-weight: 400;
+  color: rgb(107, 111, 122);
+  line-height: 1.5;
+}
+
+.partners__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.partners__item:not(:last-child) {
+  margin-bottom: 14px;
+}

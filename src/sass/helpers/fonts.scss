@@ -16,14 +16,14 @@
 
 @font-face {
   font-family: 'Acrom';
-  font-style: medium;
+  font-style: normal;
   font-weight: 500;
   src: url('../fonts/Acrom-Medium.woff') format('woff'),
     url('../fonts/Acrom-Medium.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Acrom';
-  font-style: bold;
+  font-style: normal;
   font-weight: 700;
   src: url('../fonts/Acrom-Bold.woff') format('woff'),
     url('../fonts/Acrom-Bold.woff2') format('woff2');
@@ -31,8 +31,24 @@
 
 @font-face {
   font-family: 'Acrom';
-  font-style: bold;
+  font-style: normal;
   font-weight: 900;
   src: url('../fonts/Acrom-ExtraBold.woff') format('woff'),
     url('../fonts/Acrom-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  src: url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-600.woff2") format("woff2");
+  src: url("../fonts/Montserrat-600.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
 }
