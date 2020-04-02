@@ -1,0 +1,89 @@
+.container {
+    margin: 0 auto;
+}
+
+.section__title {
+    @include font($ff: 'Acrom', $fw: 900, $fs: 20px, $lh: 30px, $color: $fifth-font-color);
+    letter-spacing: -0.8px;
+    width: 100%;
+}
+
+.interest {
+    padding-top: 30px;
+
+    &__title {
+    margin-bottom: 24px;
+    }
+
+    &__market {
+    display: flex;
+    flex-wrap: wrap;
+    }
+}
+
+.market {
+    &__title {
+    @include font($ff: 'Acrom', $fw: 900, $fs: 14px, $lh: 20px, $color: $fifth-font-color);
+    letter-spacing: -0.56px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+    }
+
+    &__list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+    padding: 0 17px 0 17px;
+    }
+
+    &__list-item {
+    @include font($ff: 'Acrom', $fw: 500, $fs: 14px, $lh: 20px, $color: $fifth-font-color);
+    letter-spacing: -0.56px;
+    }
+
+    &__list-item:not(:last-child) {
+    margin-bottom: 20px;
+    }
+
+    &__income {
+    @include font($ff: 'Acrom', $fw: 900, $fs: 14px, $lh: 20px, $color: $fifth-font-color);
+    margin: 0;
+    width: 100%;
+    padding: 0 17px 0 17px;
+    }
+    
+    &__digits {
+    @include font($ff: 'Acrom', $fw: 700, $fs: 30px, $lh: 36px, $color: #00eaff);
+    letter-spacing: -1.2px;
+    margin-bottom: 12px;   
+    display: block; 
+    }
+}
+
+.income {
+    &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    }
+
+    &__list-item {
+    @include font($ff: 'Acrom', $fw: 400, $fs: 10px, $lh: 11px, $color: $main-font-color);
+    letter-spacing: -0.4px;
+    width: 50%;
+    padding-left: 17px;
+    }
+
+    &__list-item:last-child {
+    padding-left: 0;
+    }
+
+    &__digits {
+    @include font($ff: 'Acrom', $fw: 700, $fs: 25px, $lh: 25px, $color: #00eaff);
+    letter-spacing: -1px;
+    display: block; 
+    }
+}
