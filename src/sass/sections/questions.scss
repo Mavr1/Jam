@@ -1,0 +1,130 @@
+
+.questions {
+    text-align: left;
+}
+
+.questions-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.section_heading {
+    display: flex;
+    font-size: 20px;
+    font-family: "Acrom";
+    color: $main-font-color;
+    font-weight: 900;
+    letter-spacing: -1.2px;
+    line-height: 1.5;
+    margin-bottom: 3px;
+}
+
+.questions__list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 33px;
+
+    &-item {
+        position: relative;
+        font-size: 14px;
+        font-family: "Acrom";
+        color: $main-font-color;
+        line-height: 1.4;
+        font-weight: 500;
+        letter-spacing: 0.8px;
+        padding-left: 32px;
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 17px;
+        }
+
+        &::before {
+            position: absolute;
+            display: inline-block;
+            content: '';
+            background-repeat: no-repeat;
+            background-image: url("../../images/questions/arrow.svg");
+            width: 32px;
+            height: 16px;
+            top: 0;
+            left: 0;
+        }
+
+        &-decoration {
+            font-weight: 900;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .questions-wrapper {
+        padding-top: 50px;
+    }
+
+    .section_heading {
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+
+    .questions__list {
+        margin-bottom: 57px;
+        width: 620px;
+    
+        &-item {
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.8px;
+            padding-left: 42px;
+            width: 100%;
+    
+            &:not(:last-child) {
+                margin-bottom: 19px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .questions-wrapper {
+        padding-top: 133px;
+        margin-bottom: 94px;
+    }
+
+    .section_heading {
+        font-size: 48px;
+        letter-spacing: -1px;
+        line-height: 60px;
+        width: 505px;
+        margin: 0;
+    }
+
+    .questions__list {
+        padding-top:15px;
+        margin-bottom: 0;
+        width: 500px;
+    
+        &-item {
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: 0.9px;
+            padding-left: 42px;
+    
+            &:not(:last-child) {
+                margin-bottom: 28px;
+            }
+            
+            &::before {
+                top: 11px;
+                left: 0;
+            }
+        }
+    }
+}
