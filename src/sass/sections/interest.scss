@@ -39,7 +39,7 @@
     @include for-tablet-up {
         width: 93%;
         margin: 0 auto;
-        box-shadow: 0px 15px 32px 0px rgba(0,0,0,0.16);
+        box-shadow: -18px 19px 0px 0px rgba(27,32,42,0.06), 0px 15px 32px 0px rgba(0,0,0,0.2);
         padding-top: 52px;
     }    
 
@@ -52,7 +52,7 @@
 
     @include for-tablet-up {
         @include font($ff: 'Acrom', $fw: 900, $fs: rem(18), $lh: 25px, $color: $fifth-font-color);
-        letter-spacing: -0.56px;
+        letter-spacing: -0.72px;
         text-align: center;
         margin: 0 auto;
         margin-bottom: 40px;
@@ -66,11 +66,23 @@
     padding: 0;
     margin-bottom: 24px;
     padding: 0 17px 0 17px;
+
+    @include for-tablet-up {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 40px;
+        }    
     }
 
     &__list-item {
     @include font($ff: 'Acrom', $fw: 500, $fs: 14px, $lh: 20px, $color: $fifth-font-color);
     letter-spacing: -0.56px;
+
+    @include for-tablet-up {
+        width: 28%;
+    }    
+
     }
 
     &__list-item:not(:last-child) {
