@@ -11,7 +11,7 @@
   line-height: 1.286;
   height: 67px;
   width: 256px;
-  margin-top:25px;
+  margin-top: 25px;
 }
 h1 {
   font-size: 20px;
@@ -96,9 +96,13 @@ h1 {
   display: block;
   font-size: 13px;
   font-family: 'Acrom';
-  color: rgb(93,96,102);
+  color: rgb(93, 96, 102);
   text-decoration: none;
   padding-bottom: 20px;
   text-align: center;
   margin-top: 7px;
 }
+
+@include for-tablet-up {
+ background-image: url(../images/header/fon748px.png);
+]
