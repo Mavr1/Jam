@@ -49,11 +49,11 @@
     }    
 
     &__title {
-    @include font($ff: 'Acrom', $fw: 900, $fs: 14px, $lh: 20px, $color: $fifth-font-color);
-    letter-spacing: -0.56px;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 24px;
+        @include font($ff: 'Acrom', $fw: 900, $fs: 14px, $lh: 20px, $color: $fifth-font-color);
+        letter-spacing: -0.56px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
 
     @include for-tablet-up {
         @include font($ff: 'Acrom', $fw: 900, $fs: rem(18), $lh: 25px, $color: $fifth-font-color);
@@ -66,11 +66,11 @@
     }
 
     &__list {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;
-    padding: 0 17px 0 17px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+        padding: 0 17px 0 17px;
 
     @include for-tablet-up {
         display: flex;
@@ -81,27 +81,26 @@
     }
 
     &__list-item {
-    @include font($ff: 'Acrom', $fw: 500, $fs: 14px, $lh: 20px, $color: $fifth-font-color);
-    letter-spacing: -0.56px;
+        @include font($ff: 'Acrom', $fw: 500, $fs: 14px, $lh: 20px, $color: $fifth-font-color);
+        letter-spacing: -0.56px;
 
-    @include for-tablet-up {
-        width: 30%;   
+        @include for-tablet-up {
+            width: 30%;   
         }   
     
     &:nth-child(-n + 3) {
         @include for-tablet-up {
         margin-bottom: 28px;   
         }   
-    }  
+        }  
     }
 
     &__income {
-    @include font($ff: 'Acrom', $fw: 900, $fs: 14px, $lh: 20px, $color: $fifth-font-color);
-    letter-spacing: -0.56px;
-    margin: 0;
-    width: 100%;
-    padding: 0 17px 0 17px;
-    margin-bottom: 10px;
+        @include font($ff: 'Acrom', $fw: 900, $fs: 14px, $lh: 20px, $color: $fifth-font-color);
+        letter-spacing: -0.56px;
+        margin: 0;
+        width: 100%;
+        margin-bottom: 10px;
 
     @include for-tablet-up {
         display: flex;
@@ -113,25 +112,32 @@
     }
     
     &__digits {
-    @include font($ff: 'Acrom', $fw: 700, $fs: 30px, $lh: 36px, $color: $third-font-color);
-    letter-spacing: -1.2px;
-    margin-bottom: 5px;   
-    display: block; 
+        @include font($ff: 'Acrom', $fw: 700, $fs: 30px, $lh: 36px, $color: $third-font-color);
+        letter-spacing: -1.2px;
+        margin-bottom: 5px;   
+        display: block; 
+
+        @include for-tablet-up {
+            font-weight: 500;
+        }
     }
 
     &__income-wrapper {
+        padding-left: 17px;
+
         @include for-tablet-up {
             width: 41%;
+            padding: 0;
         }
     }
 }
 
 .income {
     &__list {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
 
     @include for-tablet-up {
         display: flex;
@@ -140,26 +146,25 @@
     }
 
     &__list-item {
-    @include font($ff: 'Acrom', $fw: 500, $fs: 10px, $lh: 11px, $color: $main-font-color);
-    letter-spacing: -0.4px;
-    width: 50%;
-    padding-left: 17px;
+        @include font($ff: 'Acrom', $fw: 500, $fs: 10px, $lh: 11px, $color: $main-font-color);
+        letter-spacing: -0.4px;
+        width: 48%;
 
     @include for-tablet-up {
         padding: 0;
         width: 46%;
-    }
-    }
-
-    &__list-item:last-child {
-    padding-left: 0;
+        }
     }
 
     &__digits {
-    @include font($ff: 'Acrom', $fw: 700, $fs: 25px, $lh: 25px, $color: $third-font-color);
-    letter-spacing: -1px;
-    display: block; 
-    margin-bottom: 5px;
+        @include font($ff: 'Acrom', $fw: 700, $fs: 25px, $lh: 25px, $color: $third-font-color);
+        letter-spacing: -1px;
+        display: block; 
+        margin-bottom: 5px;
+        
+        @include for-tablet-up {
+            font-weight: 500;
+        }
     }
 }
 
@@ -179,12 +184,12 @@
     }
 
     &__list {
-    margin: 0;
-    padding: 0;
+        margin: 0;
+        padding: 0;
 
-    @include for-tablet-up {
-        width: 65%;
-    }
+        @include for-tablet-up {
+            width: 65%;
+        }
     }
 
     &__list-item {
@@ -192,6 +197,12 @@
         letter-spacing: -0.56px;
         padding-left: 36px;
         position: relative;
+        width: 95%;
+
+        @include for-tablet-up {
+            @include font($ff: 'Acrom', $fw: 500, $fs: 16px, $lh: 22px, $color: $fifth-font-color);
+            letter-spacing: -0.64px;
+        }
     }
 
     &__list-item:not(:last-child) {
@@ -212,12 +223,12 @@
 
 @media (max-width: 767px) {
     .section {
-    background-image: url('../images/interest/map.png');
-    background-repeat: no-repeat;
-    background-position: right 58%;
+        background-image: url('../images/interest/map.png');
+        background-repeat: no-repeat;
+        background-position: right 58%;
 }
 
     .market__list-item:not(:last-child) {
-    margin-bottom: 20px;
+        margin-bottom: 20px;
     }
 }
