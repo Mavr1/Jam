@@ -1,0 +1,10 @@
+.path {
+    padding-top: 37px;
+    background-color: #181c27;
+    background-image: url("../images/path/mobile_bg_highlight.png");
+    background-repeat: no-repeat;
+
+    &__subtitle {
+        @include font($ff: 'Acrom', $fw: 800, $fs: 1rem(16), $lh: rem(20), color: $secondary-font-color)
+    }
+}
