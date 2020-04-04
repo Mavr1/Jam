@@ -31,6 +31,20 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+.logo {
+  @include for-desktop-up {
+    margin-bottom: 72px;
+    
+  }
+}
+.wrapper {
+  @include for-desktop-up {
+    padding-top: 37px;
   }
 }
 .text-header1 {
@@ -41,7 +55,6 @@
   height: 31px;
   margin-bottom: 25px;
   @include for-tablet-up {
-    margin-top: 30px;
     margin-bottom: 30px;
     height: 49px;
   }
@@ -74,15 +87,21 @@ h1 {
     margin-bottom: 30px;
   }
   @include for-desktop-up {
-    width: 654px;
     font-size: 60px;
   }
 }
 .info-header { 
   margin-bottom: 40px;
   @include for-desktop-up {
+    width: 57%;
+  }
+}
+.header-wrapper {
+  @include for-desktop-up {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 15px;
   }
 }
 
@@ -115,7 +134,11 @@ h1 {
     margin-bottom: 20px;
   }
 }
-
+.form-and-link {
+  @include for-desktop-up {
+    width: 40%;
+  }
+}
 .form {
   background-color: $secondary-font-color;
   box-shadow: 0px 12px 70px 0px rgba(121, 139, 188, 0.48);
@@ -133,8 +156,13 @@ h1 {
     text-align: center;
   }
   @include for-desktop-up {
-    display: flex;
-    align-self: flex-end;
+    width: 460px;
+    height: 670px;
+    padding-right: 24px;
+    padding-top: 42px;
+    padding-bottom: 50px;
+    padding-left: 34px;
+
   }
 }
 
@@ -143,7 +171,7 @@ h1 {
   font-size: 16px;
   font-family: 'Acrom';
   color: $fifth-font-color;
-  line-height: 1.25;
+  line-height: 1.2;
   text-align: left;
   font-style: bold;
   font-weight: 900;
@@ -153,9 +181,15 @@ h1 {
     font-size: 24px;
     width: 370px;
     height: 50px;
-    margin: 0 auto;
     margin-bottom: 18px;
     text-align: center;
+  }
+  @include for-desktop-up {
+    font-size: 35px;
+    text-align: left;
+    width: 404px;
+    height: 116px;
+    margin-bottom: 25px;
   }
 }
 
@@ -171,7 +205,13 @@ h1 {
     text-align: center;
     width: 440px;
     margin-bottom: 25px;
-
+  }
+  @include for-desktop-up {
+    font-size: 18px;
+    width: 394px;
+    height: 45px;
+    text-align: left;
+    margin-bottom: 30px;
   }
 }
 
@@ -188,14 +228,22 @@ h1 {
     margin-bottom: 10px;
     margin: 0 auto;
   }
+  @include for-desktop-up {
+    width: 389px;
+    height: 60px;
+    margin-bottom: 37px;
+  }
 }
 .form-free-presentation-row {
-  padding-bottom: 12px;
+  padding-bottom: 10px;
 }
 
 .tel {
   @include for-tablet-up {
     padding-bottom: 28px;
+  }
+  @include for-desktop-up {
+    padding-bottom: 39px;
   }
 }
 
@@ -212,6 +260,10 @@ h1 {
     margin-top: 27px;
     margin: 0 auto;
   }
+  @include for-desktop-up {
+    width: 389px;
+    height: 60px;
+  }
 }
 .free-presentation-form-btn:hover {
   background-color: $third-font-color;
@@ -226,4 +278,7 @@ h1 {
   padding-bottom: 20px;
   text-align: center;
   margin-top: 7px;
+  @include for-desktop-up {
+    font-size: 16px;
+  }
 }
