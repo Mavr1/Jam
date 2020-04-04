@@ -67,3 +67,14 @@ body {
     width: 1140px;
   }
 }
+
+.wrapper {
+
+  @include for-tablet-up {
+    width: 748px;
+  }
+
+  @include for-desktop-up {
+    width: 1170px;
+  }
+}
