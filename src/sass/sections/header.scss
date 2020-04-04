@@ -2,18 +2,24 @@
   background-image: url(../images/header/fon1.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding: 29px;
-}
-//.header-wrapper {
-//background-image: url(../images/header/fon3.png);
-// background-repeat: no-repeat;
-// background-position: center;
-// padding: 29px;
-//}
-@include for-tablet-up {
-  background-image: url(../images/header/fon748px.png);
-  width: 768px;
-  margin: 0 auto;
+
+  //.header-wrapper {
+  //background-image: url(../images/header/fon3.png);
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // padding: 29px;
+  //}
+  @include for-tablet-up {
+    background-image: url(../images/header/fon748px.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 29px;
+    width: 768px;
+    margin: 0 auto;
+  }
 }
 
 .text-header {
@@ -22,7 +28,6 @@
   color: $secondary-font-color;
   line-height: 1.286;
   height: 67px;
-  width: 256px;
   margin-top: 25px;
 }
 
@@ -39,11 +44,10 @@ h1 {
   font-size: 14px;
   font-family: 'Acrom';
   color: $button-main-color;
-  font-weight: 900;
+  font-weight: bold;
   text-align: left;
   line-height: normal;
   margin-top: 25px;
-  margin: 0 auto;
 }
 
 .info-data-title2 {
