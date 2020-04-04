@@ -54,6 +54,8 @@
             display: flex;
             justify-content: space-between;
             padding: 0 15px;
+            height: 549px;
+
         }
     }
 }
@@ -77,7 +79,8 @@
     @include for-desktop-up {
         width: 60%;
         margin: 0;
-        background-position: 81% 75%;
+        background-position: 82% 83%;
+        display: block;
     }
 
     &__title {
@@ -97,8 +100,9 @@
             }    
 
         @include for-desktop-up {
-            margin-bottom: 0;
+            margin-bottom: 38px;
             width: 67%;
+
             }    
     }
 
@@ -210,7 +214,6 @@
 }
 
 .proposal {
-
     @include for-tablet-up {
         width: 83%;
         margin: 0 auto;
@@ -219,14 +222,21 @@
     @include for-desktop-up {
         width: 35%;
         margin: 0;
-    }
+        display: block;
+        padding-top: 120px;
+        }
 
     &__title {
-        margin-bottom: 12px;
-            
+        margin-bottom: 12px; 
         @include for-tablet-up {
             margin-bottom: 26px;
-        }
+            }
+
+         @include for-desktop-up {
+             width: 100%;
+             margin-bottom: 32px;
+             padding: 0;
+             }
     }
 
     &__list {
@@ -235,7 +245,11 @@
 
         @include for-tablet-up {
             width: 65%;
-        }
+            }
+
+        @include for-desktop-up {
+            width: 100%;
+            }
     }
 
     &__list-item {
@@ -248,7 +262,12 @@
         @include for-tablet-up {
             @include font($ff: 'Acrom', $fw: 500, $fs: 16px, $lh: 22px, $color: $fifth-font-color);
             letter-spacing: -0.64px;
-        }
+            }
+
+        @include for-desktop-up {
+            @include font($ff: 'Acrom', $fw: 500, $fs: 18px, $lh: 20px, $color: $fifth-font-color);
+            letter-spacing: -0.72px;
+            }    
     }
 
     &__list-item:not(:last-child) {
