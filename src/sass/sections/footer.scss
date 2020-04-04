@@ -1,17 +1,4 @@
-.footer__wrapper {
-  width: 100%;
-  margin: 0 auto;
-
-  @include for-tablet-up {
-    width: 620px;
-  }
-
-  @include for-desktop-up {
-    width: 1140px;
-  }
-}
-
-.footer {
+footer {
   background-image: url(../images/footer_bg-sm.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -38,6 +25,19 @@
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/footer_bg-lg@2x.jpg);
     }
+  }
+}
+
+.footer__wrapper {
+  width: 100%;
+  margin: 0 auto;
+
+  @include for-tablet-up {
+    width: 620px;
+  }
+
+  @include for-desktop-up {
+    width: 1140px;
   }
 }
 
