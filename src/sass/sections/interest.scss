@@ -18,34 +18,34 @@
 }
 
 .interest {
-    padding-top: rem(30);
-    padding-bottom: rem(38);
+    padding-top: 30px;
+    padding-bottom: 38px;
 
     @include for-tablet-up {
-        padding-top: rem(56);
+        padding-top: 56px;
     }
 
     @include for-desktop-up {
-        padding-top: rem(95);
-        padding-bottom: rem(140);
+        padding-top: 95px;
+        padding-bottom: 140px;
     }
 
     &__title {
-    margin-bottom: rem(24);
+    margin-bottom: 24px;
 
     @include for-tablet-up {
-        margin-bottom: rem(35);
+        margin-bottom: 35px;
     }    
 
     @include for-desktop-up {
-        margin-bottom: rem(70)
+        margin-bottom: 70px
         }
     }
 
     &__market {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: rem(28);
+        margin-bottom: 28px;
     }
 
     &__wrapper {
@@ -63,14 +63,14 @@
         width: 93%;
         margin: 0 auto;
         box-shadow: -18px 19px 0px 0px rgba(27,32,42,0.06), 0px 15px 32px 0px rgba(0,0,0,0.2);
-        padding-top: rem(52);
-        padding-bottom: rem(54);
-        margin-bottom: rem(48);
+        padding-top: 52px;
+        padding-bottom: 54px;
+        margin-bottom: 48px;
         background-image: url('../images/interest/map.png');
         background-repeat: no-repeat;
         background-position: 80% 83%;
-        padding-left: rem(57);
-        padding-right: rem(50);
+        padding-left: 57px;
+        padding-right: 50px;
 
         @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
             background-image: url('../images/interest/map@2x.png');
@@ -95,19 +95,19 @@
         letter-spacing: -0.56px;
         margin: 0;
         padding: 0;
-        margin-bottom: rem(20);
+        margin-bottom: 20px;
 
         @include for-tablet-up {
             @include font($ff: 'Acrom', $fw: 800, $fs: rem(18), $lh: rem(25), $color: $fifth-font-color);
             letter-spacing: -0.72px;
             text-align: center;
             margin: 0 auto;
-            margin-bottom: rem(30);
+            margin-bottom: 30px;
             width: 65%;
         }    
 
         @include for-desktop-up {
-            margin-bottom: rem(38);
+            margin-bottom: 38px;
             width: 67%;
         }    
     }
@@ -116,7 +116,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
-        margin-bottom: rem(20);
+        margin-bottom: 20px;
         padding: 0 17px 0 17px;
 
         @include for-tablet-up {
@@ -137,7 +137,7 @@
    
         &:nth-child(-n + 3) {
             @include for-tablet-up {
-                margin-bottom: rem(28);   
+                margin-bottom: 28px;   
             }   
 
         @include for-desktop-up {
@@ -151,21 +151,21 @@
         letter-spacing: -0.56px;
         margin: 0;
         width: 100%;
-        margin-bottom: rem(10);
+        margin-bottom: 10px;
 
         @include for-tablet-up {
             display: flex;
             width: 100%;
             margin: 0;
             padding: 0;
-            margin-bottom: rem(10);
+            margin-bottom: 10px;
         }
     }
     
     &__digits {
         @include font($ff: 'Acrom', $fw: 700, $fs: rem(30), $lh: rem(36), $color: $third-font-color);
         letter-spacing: -1.2px;
-        margin-bottom: rem(5);   
+        margin-bottom: 5px;   
         display: block; 
 
         @include for-tablet-up {
@@ -174,7 +174,7 @@
     }
 
     &__income-wrapper {
-        padding-left: rem(17);
+        padding-left: 17px;
 
         @include for-tablet-up {
             width: 41%;
@@ -211,7 +211,7 @@
         @include font($ff: 'Acrom', $fw: 700, $fs: rem(25), $lh: rem(25), $color: $third-font-color);
         letter-spacing: -1px;
         display: block; 
-        margin-bottom: rem(5);
+        margin-bottom: 5px;
         
         @include for-tablet-up {
             font-weight: 500;
@@ -228,19 +228,19 @@
     @include for-desktop-up {
         width: 35%;
         margin: 0;
-        padding-top: rem(120);
+        padding-top: 120px;
     }
 
     &__title {
-        margin-bottom: rem(12); 
+        margin-bottom: 12px; 
 
         @include for-tablet-up {
-            margin-bottom: rem(26);
+            margin-bottom: 26px;
         }
 
          @include for-desktop-up {
              width: 100%;
-             margin-bottom: rem(32);
+             margin-bottom: 32px;
              padding: 0;
         }
     }
@@ -261,7 +261,7 @@
     &__list-item {
         @include font($ff: 'Acrom', $fw: 500, $fs: rem(14), $lh: rem(20), $color: $fifth-font-color);
         letter-spacing: -0.56px;
-        padding-left: rem(36);
+        padding-left: 36px;
         position: relative;
         width: 95%;
 
@@ -277,18 +277,18 @@
     }
 
     &__list-item:not(:last-child) {
-        margin-bottom: rem(10);
+        margin-bottom: 10px;
     }
 
     &__list-item::before {
         position: absolute;
         content: "";
-        width: rem(12);
-        height: rem(12);
+        width: 12px;
+        height: 12px;
         display: block;
         background-color: $third-font-color;
         left: 0;
-        top: rem(3);
+        top: 3px;
     }
 }
 
@@ -300,6 +300,6 @@
     }
 
     .market__list-item:not(:last-child) {
-        margin-bottom: rem(20);
+        margin-bottom: 20px;
     }
 }
