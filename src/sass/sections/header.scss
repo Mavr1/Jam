@@ -23,7 +23,7 @@
     width: 768px;
     margin: 0 auto;
   }
-  @include for-decktop-up {
+  @include for-desktop-up {
     background-image: url(../images/header/fon1200.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -73,7 +73,7 @@ h1 {
 }
 .info-header {
   margin-bottom: 40px;
-  @include for-decktop-up {
+  @include for-desktop-up {
     display: block;
   }
 }
@@ -82,7 +82,7 @@ h1 {
   display: block;
   font-size: 14px;
   font-family: 'Acrom';
-  color: rgb(249,174,35);
+  color: rgb(249, 174, 35);
   font-weight: bold;
   text-align: left;
   line-height: normal;
@@ -97,7 +97,7 @@ h1 {
   display: block;
   font-size: 20px;
   font-family: 'Acrom';
-  color: rgb(249,174,35);
+  color: rgb(249, 174, 35);
   line-height: 0%;
   font-weight: 900;
   font-style: bold;
@@ -114,19 +114,24 @@ h1 {
   width: 260px;
   height: 378px;
   padding: 17px;
-  margin: 0 auto;
   margin-bottom: 15px;
   @include for-tablet-up {
-    width: 660px;
+    width: 621px;
     height: 398px;
+    padding-top: 35px;
+    padding-right: 77px;
+    padding-left: 77px;
+    padding-bottom: 40px;
+    text-align: center;
   }
-  @include for-decktop-up {
+  @include for-desktop-up {
     display: block;
     margin-right: auto;
   }
 }
 
 .form-free-presentation-form-title {
+  display: inline-block;
   font-size: 16px;
   font-family: 'Acrom';
   color: $fifth-font-color;
@@ -135,7 +140,6 @@ h1 {
   font-style: bold;
   font-weight: 900;
   padding-bottom: 5px;
-  width: 183px;
   height: 55px;
   @include for-tablet-up {
     font-size: 24px;
@@ -143,20 +147,23 @@ h1 {
     height: 50px;
     margin: 0 auto;
     margin-bottom: 18px;
+    text-align: center;
   }
 }
 
 .form-free-presentation-form-title-info {
-  display: block;
+  display: inline-block;
   font-size: 13px;
   font-family: 'Acrom';
   color: $fifth-font-color;
   text-align: left;
-  font-weight: normal;
+  font-weight: bold;
+  font-style: 700;
   @include for-tablet-up {
     text-align: center;
-    width: 445px;
+    width: 440px;
     margin-bottom: 25px;
+
   }
 }
 
@@ -169,10 +176,9 @@ h1 {
   height: 40px;
   padding-left: 16px;
   @include for-tablet-up {
-    width: 440px;
+    width: 468px;
     margin-bottom: 10px;
     margin: 0 auto;
-
   }
 }
 .form-free-presentation-row {
@@ -188,9 +194,8 @@ h1 {
   color: $secondary-font-color;
   font-weight: 700;
   @include for-tablet-up {
-    width: 440px;
+    width: 468px;
     margin-top: 27px;
-    margin-bottom: 40px;
     margin: 0 auto;
   }
 }
