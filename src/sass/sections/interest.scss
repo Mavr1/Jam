@@ -54,8 +54,6 @@
             display: flex;
             justify-content: space-between;
             padding: 0 15px;
-            height: 549px;
-
         }
     }
 }
@@ -222,7 +220,6 @@
     @include for-desktop-up {
         width: 35%;
         margin: 0;
-        display: block;
         padding-top: 120px;
         }
 
@@ -272,7 +269,7 @@
 
     &__list-item:not(:last-child) {
         margin-bottom: 10px;
-    }
+        }
 
     &__list-item::before {
         position: absolute;
@@ -283,7 +280,7 @@
         background-color: $third-font-color;
         left: 0;
         top: 3px;
-    }
+        }
 }
 
 @media (max-width: 767px) {
@@ -291,9 +288,9 @@
         background-image: url('../images/interest/map.png');
         background-repeat: no-repeat;
         background-position: right 58%;
-}
+        }
 
     .market__list-item:not(:last-child) {
         margin-bottom: 20px;
-    }
+        }
 }
