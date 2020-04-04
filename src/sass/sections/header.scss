@@ -1,7 +1,19 @@
-.header-wrapper {
-  background-image: url(../images/header/fon3.png);
+.header {
+  background-image: url(../images/header/fon1.png);
   background-repeat: no-repeat;
+  background-position: center;
   padding: 29px;
+}
+//.header-wrapper {
+//background-image: url(../images/header/fon3.png);
+// background-repeat: no-repeat;
+// background-position: center;
+// padding: 29px;
+//}
+@include for-tablet-up {
+  background-image: url(../images/header/fon748px.png);
+  width: 768px;
+  margin: 0 auto;
 }
 
 .text-header {
@@ -44,7 +56,7 @@ h1 {
 
 .form {
   background-color: $secondary-font-color;
-  box-shadow: 0px 12px 70px 0px rgba (121, 139, 188, 0.48);
+  box-shadow: 0px 12px 70px 0px rgba(121, 139, 188, 0.48);
   width: 260px;
   padding: 17px;
   margin-top: 15px;
