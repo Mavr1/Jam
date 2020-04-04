@@ -66,14 +66,14 @@
         padding-top: rem(52);
         padding-bottom: rem(54);
         margin-bottom: rem(48);
-        background-image: url('../images/interest/map.jpg');
+        background-image: url('../images/interest/map.png');
         background-repeat: no-repeat;
         background-position: 80% 83%;
         padding-left: rem(57);
         padding-right: rem(50);
 
         @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url('../images/interest/map@2x.jpg');
+            background-image: url('../images/interest/map@2x.png');
             background-size: 45%;
         }
     }    
@@ -85,7 +85,7 @@
         display: block;
 
         @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url('../images/interest/map@2x.jpg');
+            background-image: url('../images/interest/map@2x.png');
             background-size: 45%;
             }
         }
@@ -294,7 +294,7 @@
 
 @media (max-width: 767px) {
     .section {
-        background-image: url('../images/interest/map.png');
+        background-image: url('../images/interest/map_mobile.png');
         background-repeat: no-repeat;
         background-position: right 58%;
     }
