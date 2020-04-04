@@ -1,5 +1,6 @@
 .header {
-  background-image: url(../images/header/fon1.png);
+  background-image: url(../images/header/fon320.png);
+  background-color: rgb(24,28,39);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -13,6 +14,7 @@
   //}
   @include for-tablet-up {
     background-image: url(../images/header/fon748px.png);
+    background-color: rgb(24,28,39);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -25,6 +27,7 @@
   }
   @include for-desktop-up {
     background-image: url(../images/header/fon1200.png);
+    background-color: rgb(24,28,39);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,11 +73,16 @@ h1 {
     font-size: 40px;
     margin-bottom: 30px;
   }
+  @include for-desktop-up {
+    width: 654px;
+    font-size: 60px;
+  }
 }
-.info-header {
+.info-header { 
   margin-bottom: 40px;
   @include for-desktop-up {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -125,8 +133,8 @@ h1 {
     text-align: center;
   }
   @include for-desktop-up {
-    display: block;
-    margin-right: auto;
+    display: flex;
+    align-self: flex-end;
   }
 }
 
@@ -158,7 +166,7 @@ h1 {
   color: $fifth-font-color;
   text-align: left;
   font-weight: bold;
-  font-style: 700;
+  font-style: 400;
   @include for-tablet-up {
     text-align: center;
     width: 440px;
@@ -183,6 +191,12 @@ h1 {
 }
 .form-free-presentation-row {
   padding-bottom: 12px;
+}
+
+.tel {
+  @include for-tablet-up {
+    padding-bottom: 28px;
+  }
 }
 
 .free-presentation-form-btn {
