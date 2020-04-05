@@ -6,11 +6,34 @@
     background-repeat: no-repeat;
     background-position: center right;
 
+    @include for-tablet-up {
+        padding-top: rem(60);
+        padding-bottom: rem(64);
+        background-image: url("../images/path/tablet_bg_highlight.png");
+    }
+
+    @include for-desktop-up {
+        
+    }
+
+    &__wrapper {
+        @include for-tablet-up {
+            padding-left: rem(64);
+            padding-right: rem(44);
+        } 
+    }
+
     &__subtitle {
         @include font($ff: 'Acrom', $fw: 700, $fs: rem(16), $lh: rem(20), $color: $secondary-font-color);
         letter-spacing: -0.64px;
         margin: 0;
         margin-bottom: rem(26);
+
+        @include for-tablet-up {
+            @include font($ff: 'Acrom', $fw: 800, $fs: rem(22), $lh: rem(30), $color: $secondary-font-color);
+            letter-spacing: -0.88px;
+            margin-bottom: 36px;
+        }
     }
 
     &__descr {
@@ -20,6 +43,12 @@
     &__descr-text {
         @include font($ff: 'Acrom', $fw: 700, $fs: rem(13), $lh: rem(24), $color: $secondary-font-color);
         margin: 0;
+
+        @include for-tablet-up {
+            @include font($ff: 'Acrom', $fw: 800, $fs: rem(16), $lh: rem(22), $color: $secondary-font-color);
+            width: 62%;
+            margin-bottom: 36px;
+        }
     }
 
     &__descr-text::before {
@@ -41,6 +70,12 @@
          @include font($ff: 'Acrom', $fw: 700, $fs: rem(20), $lh: rem(30), $color: $third-font-color);
          letter-spacing: -0.8px;
          margin-bottom: rem(23);
+
+         @include for-tablet-up {
+             @include font($ff: 'Acrom', $fw: 800, $fs: rem(40), $lh: rem(50), $color: $third-font-color);
+             letter-spacing: -1.6px;
+             margin-bottom: 36px;
+         }
     }
 
     &__link {
@@ -57,5 +92,20 @@
         box-shadow: 0px 2px 10px 0px rgba(255, 107, 8, 0.59);
         cursor: pointer;
         transition: all 0.3s linear;
+
+        &:focus,
+        &:hover {
+            transform: translateY(1px)scale(1.1);
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+            background-color: $third-font-color;
+        }
+
+        @include for-tablet-up {
+            @include font($ff: 'Acrom', $fw: 700, $fs: rem(18), $lh: rem(30), $color: $secondary-font-color);
+            width: rem(530);
+            height: rem(70);
+            margin-left: 0;
+        }
     }
 }
