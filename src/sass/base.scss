@@ -42,10 +42,10 @@ body {
   margin: 0 auto;
 
   @include for-tablet-up {
-    width: 748px;
+    width: 660px;
   }
 
   @include for-desktop-up {
-    width: 1170px;
+    width: 1140px;
   }
 }
