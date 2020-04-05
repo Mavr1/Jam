@@ -1,10 +1,61 @@
 .path {
-    padding-top: 37px;
+    padding-top: rem(37);
+    padding-bottom: rem(41);
     background-color: #181c27;
     background-image: url("../images/path/mobile_bg_highlight.png");
     background-repeat: no-repeat;
+    background-position: center right;
 
     &__subtitle {
-        @include font($ff: 'Acrom', $fw: 800, $fs: 1rem(16), $lh: rem(20), color: $secondary-font-color)
+        @include font($ff: 'Acrom', $fw: 700, $fs: rem(16), $lh: rem(20), $color: $secondary-font-color);
+        letter-spacing: -0.64px;
+        margin: 0;
+        margin-bottom: rem(26);
+    }
+
+    &__descr {
+        margin-bottom: rem(28);
+    }
+
+    &__descr-text {
+        @include font($ff: 'Acrom', $fw: 700, $fs: rem(13), $lh: rem(24), $color: $secondary-font-color);
+        margin: 0;
+    }
+
+    &__descr-text::before {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 2px;
+        background-color: $third-font-color;
+        margin-bottom: 18px;
+    }
+
+    &__descr-style {
+        font-weight: 400;
+        color:$fourth-font-color;
+        letter-spacing: -0.56px;
+    }
+
+    &__title {
+         @include font($ff: 'Acrom', $fw: 700, $fs: rem(20), $lh: rem(30), $color: $third-font-color);
+         letter-spacing: -0.8px;
+         margin-bottom: rem(23);
+    }
+
+    &__link {
+        @include font($ff: 'Acrom', $fw: 700, $fs: rem(14), $lh: rem(30), $color: $secondary-font-color);
+        display: block;
+        margin: 0 auto;
+        border: none;
+        width: rem(260);
+        height: rem(70);
+        padding: 21px 15px;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: $button-main-color;
+        box-shadow: 0px 2px 10px 0px rgba(255, 107, 8, 0.59);
+        cursor: pointer;
+        transition: all 0.3s linear;
     }
 }
