@@ -1,7 +1,7 @@
 .header {
-  background-image: url(../images/header/fon320.png);
+  background-image: url(../images/line.png), url(../images/header/fon320.png);
   background-color: rgb(24, 28, 39);
-  background-repeat: no-repeat;
+  background-repeat: repeat-y, no-repeat;
   background-position: center;
   background-size: cover;
   padding: 24px 0 20px 0;
