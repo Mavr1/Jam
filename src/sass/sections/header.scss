@@ -39,7 +39,7 @@
 .logo {
   @include for-desktop-up {
     margin-bottom: 72px;
-    
+    margin-left: 15px;
   }
 }
 .wrapper {
@@ -58,6 +58,13 @@
     margin-bottom: 30px;
     height: 49px;
   }
+  @include for-desktop-up {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+  }
 }
 
 .text-header2 {
@@ -68,10 +75,14 @@
   height: 67px;
   margin-bottom: 25px;
   @include for-tablet-up {
-    margin-bottom: 10px;
     font-size: 18px;
     line-height: 1.4;
     margin-bottom: 30px;
+  }
+  @include for-desktop-up {
+    font-size: 35px;
+    line-height: 1.2;
+    margin-bottom: 120px;
   }
 }
 
@@ -88,13 +99,16 @@ h1 {
   }
   @include for-desktop-up {
     font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 50px;
+
   }
 }
 .info-header { 
   margin-bottom: 40px;
   @include for-desktop-up {
     width: 57%;
-  }
+    }
 }
 .header-wrapper {
   @include for-desktop-up {
@@ -117,6 +131,10 @@ h1 {
   @include for-tablet-up {
     font-size: 18px;
     margin-bottom: 5px;
+  }
+  @include for-desktop-up {
+    font-size: 29px;
+    line-height: 2.5;
   }
 }
 
@@ -231,14 +249,17 @@ h1 {
   @include for-desktop-up {
     width: 389px;
     height: 60px;
-    margin-bottom: 37px;
   }
 }
 .form-free-presentation-row {
   padding-bottom: 10px;
+  @include for-desktop-up {
+    padding-bottom: 37px;
+  }
 }
 
 .tel {
+  padding-bottom: 25px;
   @include for-tablet-up {
     padding-bottom: 28px;
   }
@@ -257,7 +278,7 @@ h1 {
   font-weight: 700;
   @include for-tablet-up {
     width: 468px;
-    margin-top: 27px;
+    //margin-top: 27px;
     margin: 0 auto;
   }
   @include for-desktop-up {
