@@ -58,6 +58,7 @@ body {
 .container {
   margin: 0 auto;
   width: 260px;
+  margin: 0 auto;
 
   @include for-tablet-up {
     width: 660px;
