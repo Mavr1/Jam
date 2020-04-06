@@ -58,6 +58,9 @@
 }
 
 .about {
+  background-image: url("../images/about/line.png");
+  background-repeat: repeat-y;
+  background-position: center;
   counter-reset: count-box;
   padding: 46px 0 50px;
 

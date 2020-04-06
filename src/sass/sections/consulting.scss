@@ -12,9 +12,12 @@
 }
 
 .consulting {
-  position: relative;
-  z-index: -10;
+  background-image: url(../images/consulting/bg/line.png);
   background-color: rgb(237, 240, 242);
+  background-repeat: repeat-y;
+  background-position: center;
+  position: relative;
+  z-index: -1;
   padding: 34px 0 38px 0;
 }
 
@@ -189,7 +192,7 @@
       text-transform: none;
     }
   }
-  
+
   .consulting__item-text {
     font-size: 18px;
     line-height: 35px;
