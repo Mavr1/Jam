@@ -1,20 +1,20 @@
 .header {
-  background-image: url(../images/header/fon320.png);
+  background-image: url(../images/header/line.png), url(../images/header/fon320.png);
   background-color: rgb(24, 28, 39);
-  background-repeat: no-repeat;
+  background-repeat: repeat-y, no-repeat;
   background-position: center;
   background-size: cover;
   padding: 24px 0 20px 0;
   margin: 0 auto;
 
   @include for-tablet-up {
-    background-image: url(../images/header/fon748px.png);
+    background-image: url(../images/header/line.png), url(../images/header/fon748.png);
     padding: 40px 74px 29px;
   }
 
   @include for-desktop-up {
-    background-image: url(../images/header/fon1200.png);
-    padding: 38px 0 0 0;
+    background-image: url(../images/header/line.png), url(../images/header/fon1200.png);
+    padding: 38px 0 92px 0;
   }
 }
 
