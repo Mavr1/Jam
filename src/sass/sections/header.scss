@@ -4,49 +4,42 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 29px;
+  padding: 24px 0 20px 0;
+  margin: 0 auto;
 
-  //.header-wrapper {
-  //background-image: url(../images/header/fon3.png);
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // padding: 29px;
-  //}
   @include for-tablet-up {
     background-image: url(../images/header/fon748px.png);
-    background-color: rgb(24, 28, 39);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 29px;
-    padding-left: 74px;
-    padding-right: 74px;
-    padding-top: 40px;
-    width: 768px;
-    margin: 0 auto;
+    padding: 40px 74px 29px;
   }
+
   @include for-desktop-up {
     background-image: url(../images/header/fon1200.png);
-    background-color: rgb(24, 28, 39);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
+    padding: 38px 0 0 0;
   }
 }
+
+.header-container {
+  width: 260px;
+  margin: 0 auto;
+
+  @include for-tablet-up {
+    width: 620px;
+  }
+
+  @include for-desktop-up {
+    width: 1190px;
+  }
+}
+
 .logo {
+  margin-bottom: 30px;
+
   @include for-desktop-up {
     margin-bottom: 72px;
     margin-left: 15px;
   }
 }
-.wrapper {
-  @include for-desktop-up {
-    padding-top: 37px;
-  }
-}
+
 .text-header1 {
   font-size: 14px;
   font-family: 'Acrom';
@@ -99,12 +92,14 @@ h1 {
     margin-bottom: 55px;
   }
 }
+
 .info-header {
   margin-bottom: 15px;
   @include for-desktop-up {
     width: 57%;
   }
 }
+
 .header-wrapper {
   @include for-desktop-up {
     display: flex;
@@ -113,6 +108,7 @@ h1 {
     padding: 0 15px;
   }
 }
+
 .info-data {
   font-size: 0em;
   @include for-desktop-up {
@@ -155,11 +151,13 @@ h1 {
     margin-bottom: 0;
   }
 }
+
 .form-and-link {
   @include for-desktop-up {
     width: 40%;
   }
 }
+
 .form {
   background-color: $secondary-font-color;
   box-shadow: 0px 12px 70px 0px rgba(121, 139, 188, 0.48);
@@ -253,6 +251,7 @@ h1 {
     height: 60px;
   }
 }
+
 .form-free-presentation-row {
   padding-bottom: 10px;
   @include for-desktop-up {
@@ -293,6 +292,7 @@ h1 {
     height: 60px;
   }
 }
+
 .free-presentation-form-btn:hover:focus {
   background-color: $third-font-color;
   color: $main-font-color;
@@ -300,6 +300,7 @@ h1 {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
 }
+
 .politics-link {
   display: block;
   font-size: 13px;
