@@ -1,3 +1,10 @@
+.wrapper-box {
+  @include for-desktop-up {
+    margin-right: auto;
+    width: 720px;
+  }
+}
+
 .path {
   padding-top: rem(37);
   padding-bottom: rem(41);
@@ -18,16 +25,17 @@
     background-position: center center;
   }
 
-  &__wrapper-box {
+  &__wrapper {
+    position: relative;
+    width: 260px;
+    margin: 0 auto;
+
     @include for-tablet-up {
-      padding-left: rem(64);
-      padding-right: rem(44);
+      width: 640px;
     }
 
     @include for-desktop-up {
-      padding: 0;
-      width: 60%;
-      padding-bottom: rem(8);
+      width: 1140px;
     }
   }
 
@@ -71,11 +79,7 @@
   &__descr {
     margin-bottom: rem(28);
     @include for-desktop-up {
-      width: 29%;
       margin: 0;
-      display: flex;
-      flex-wrap: wrap;
-      align-content: flex-end;
     }
   }
 
@@ -90,6 +94,7 @@
     margin: 0;
 
     @include for-tablet-up {
+      width: 29%;
       @include font(
         $ff: 'Acrom',
         $fw: 800,
@@ -109,9 +114,12 @@
         $lh: rem(35),
         $color: $secondary-font-color
       );
-      width: 100%;
-      margin: 0;
       letter-spacing: -0.72px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 360px;
+      margin: 0;
     }
   }
 
@@ -177,8 +185,6 @@
     display: block;
     margin: 0 auto;
     border: none;
-    width: rem(260);
-    height: rem(70);
     padding: rem(21) rem(15);
     text-transform: uppercase;
     text-align: center;
@@ -203,8 +209,6 @@
         $lh: rem(30),
         $color: $secondary-font-color
       );
-      width: 83%;
-      height: rem(70);
       margin-left: 0;
     }
 
@@ -216,44 +220,7 @@
         $lh: rem(30),
         $color: $secondary-font-color
       );
-      width: 97%;
-      height: rem(109);
-      padding: rem(40) rem(70);
+      padding: rem(40) 0;
     }
-  }
-}
-
-.path__wrapper {
-  @include for-desktop-up {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-@media (max-width: 1199px) {
-  .path .visually-hidden {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
-  }
-}
-
-@media (min-width: 1200px) {
-  .path .visually-hidden-desktop {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
   }
 }
