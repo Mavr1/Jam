@@ -28,7 +28,6 @@
 
   @include for-desktop-up {
     width: 1140px;
-    margin: 0 auto;
   }
 }
 
@@ -148,6 +147,7 @@
   }
 
   @include for-desktop-up {
+    padding: 62px 0 0;
     order: 1;
   }
 }
