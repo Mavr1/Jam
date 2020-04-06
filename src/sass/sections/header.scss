@@ -272,17 +272,20 @@ h1 {
 .free-presentation-form-btn {
   display: block;
   background-color: $button-secondary-color;
+  border: none;
   box-shadow: 0px 2px 10px 0px rgba(255, 107, 8, 0.6);
   width: 220px;
   height: 40px;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  font-size: 14px;
+  font-family: 'Acrom', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 0.32px;
   text-transform: uppercase;
   color: $secondary-font-color;
-  font-weight: 700;
+  text-align: center;
   transition: all 0.3s linear;
   cursor: pointer;
+
   @include for-tablet-up {
     width: 468px;
     margin: 0 auto;
