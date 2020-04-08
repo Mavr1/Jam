@@ -67,7 +67,7 @@ footer {
   margin: 0 auto;
 
   @include for-tablet-up {
-    text-align-last: left;
+    text-align: left;
   }
 }
 
