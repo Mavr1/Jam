@@ -44,11 +44,7 @@
     height: 230px;
     padding: 40px 25px 0 30px;
 
-    &:not(:last-child) {
-      margin-bottom: 42px;
-    }
-
-    &::after {
+     &::after {
       content: '';
       display: block;
       position: absolute;
@@ -76,7 +72,6 @@
       @include for-tablet-up {
         font-size: 70px;
         top: -52px;
-        margin: 0;
       }
 
       @include for-desktop-up {
@@ -84,6 +79,12 @@
         top: -110px;
       }
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .consulting__list-item:not(:last-child) {
+    margin-bottom: 42px;
   }
 }
 
@@ -155,7 +156,6 @@
 
       &-item {
         flex-basis: 226px;
-        margin-bottom: 0;
       }
     }
 
