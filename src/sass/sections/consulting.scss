@@ -76,6 +76,7 @@
       @include for-tablet-up {
         font-size: 70px;
         top: -52px;
+        margin: 0;
       }
 
       @include for-desktop-up {
