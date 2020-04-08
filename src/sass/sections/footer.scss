@@ -3,7 +3,7 @@ footer {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  padding: 42px 0 14px;
+  padding: 70px 0 14px;
   text-align: center;
 
   @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -12,7 +12,7 @@ footer {
 
   @include for-tablet-up {
     background-image: url(../images/footer/footer_bg-md.jpg);
-    padding: 80px 0 18px;
+    padding: 130px 0 18px;
 
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/footer/footer_bg-md@2x.jpg);
@@ -43,22 +43,29 @@ footer {
 
 .footer__request {
   display: block;
+  border: none;
+  border-bottom: 2px solid $third-font-color;
+  background: none;
   font-size: 20px;
-  line-height: 60px;
+  line-height: 30px;
   font-family: 'Acrom', sans-serif;
   font-weight: 900;
   color: $third-font-color;
   text-transform: uppercase;
-  text-decoration: underline;
-  margin-bottom: 370px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 auto 370px;
 
   @include for-tablet-up {
     font-size: 30px;
+    line-height: 40px;
     margin-bottom: 450px;
   }
 
   @include for-desktop-up {
+    border-bottom: 3px solid $third-font-color;
     font-size: 60px;
+    line-height: 76px;
     margin-bottom: 600px;
   }
 }
@@ -67,14 +74,13 @@ footer {
   margin: 0 auto;
 
   @include for-tablet-up {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
+    text-align: left;
   }
 }
 
 .footer__logo {
-  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
 
   @include for-tablet-up {
     margin: 0 14px 0 0;
@@ -95,6 +101,8 @@ footer {
   padding: 0;
 
   @include for-tablet-up {
+    display: inline-block;
+    vertical-align: middle;
     font-size: 14px;
   }
 
