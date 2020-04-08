@@ -3,7 +3,7 @@ footer {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  padding: 42px 0 14px;
+  padding: 70px 0 14px;
   text-align: center;
 
   @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -12,7 +12,7 @@ footer {
 
   @include for-tablet-up {
     background-image: url(../images/footer/footer_bg-md.jpg);
-    padding: 80px 0 18px;
+    padding: 130px 0 18px;
 
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/footer/footer_bg-md@2x.jpg);
