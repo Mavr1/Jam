@@ -43,22 +43,29 @@ footer {
 
 .footer__request {
   display: block;
+  border: none;
+  border-bottom: 2px solid $third-font-color;
+  background: none;
   font-size: 20px;
-  line-height: 60px;
+  line-height: 30px;
   font-family: 'Acrom', sans-serif;
   font-weight: 900;
   color: $third-font-color;
   text-transform: uppercase;
-  text-decoration: underline;
-  margin-bottom: 370px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 auto 370px;
 
   @include for-tablet-up {
     font-size: 30px;
+    line-height: 40px;
     margin-bottom: 450px;
   }
 
   @include for-desktop-up {
+    border-bottom: 3px solid $third-font-color;
     font-size: 60px;
+    line-height: 76px;
     margin-bottom: 600px;
   }
 }
