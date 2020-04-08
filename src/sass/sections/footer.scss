@@ -67,14 +67,13 @@ footer {
   margin: 0 auto;
 
   @include for-tablet-up {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
+    text-align-last: left;
   }
 }
 
 .footer__logo {
-  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
 
   @include for-tablet-up {
     margin: 0 14px 0 0;
@@ -95,6 +94,8 @@ footer {
   padding: 0;
 
   @include for-tablet-up {
+    display: inline-block;
+    vertical-align: middle;
     font-size: 14px;
   }
 
