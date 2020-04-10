@@ -1,1 +1,0 @@
-"use strict";$(".js-consulting-button").click(function(){$(".js-popup-overlay").fadeIn(),$("js-popup-overlay").addClass("disabled")}),$(".js-popup-close").click(function(){$(".js-popup-overlay").fadeOut()}),$(document).mouseup(function(p){var o=$(".js-popup");p.target!=o[0]&&0===o.has(p.target).length&&$(".js-popup-overlay").fadeOut()});
