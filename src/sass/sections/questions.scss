@@ -8,8 +8,8 @@
     padding: 56px 0;
   }
 
-  @include for-tablet-up {
-    padding: 140px 0 96px;
+  @include for-desktop-up {
+    padding: 128px 0 92px;
   }
 }
 
