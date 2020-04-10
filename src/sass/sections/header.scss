@@ -306,10 +306,11 @@ h1 {
   transition: all 0.3s linear;
   cursor: pointer;
   padding: 0;
+  margin-left: auto;
+  margin-right: auto;
 
   @include for-tablet-up {
     width: 468px;
-    margin: 0 auto;
   }
   @include for-desktop-up {
     width: 389px;
