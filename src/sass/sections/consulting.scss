@@ -132,12 +132,6 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .wrapper-md {
-    width: 532px;
-    margin: 0 auto;
-  }
-}
 
 @media (min-width: 768px) {
   .consulting__heading {
@@ -146,19 +140,19 @@
     margin-bottom: 55px;
     text-align: center;
   }
-
+  
   .consulting {
     &__list {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       margin-bottom: 35px;
-
+      
       &-item {
         flex-basis: 226px;
       }
     }
-
+    
     &-button {
       height: 70px;
       font-size: 18px;
@@ -167,17 +161,24 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .wrapper-md {
+    width: 532px;
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: 1200px) {
   .consulting {
     padding: 92px 0 100px 0;
   }
-
+  
   .consulting__heading {
     font-size: 48px;
     line-height: 60px;
     margin-bottom: 108px;
   }
-
+  
   .consulting {
     &__list {
       margin-bottom: 78px;
